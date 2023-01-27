@@ -9,7 +9,7 @@ const state = reactive({
 function fetchData() {
   state.busy = true;
   fetch(
-    "https://newsapi.org/v2/everything?q=tesla&from=2022-12-20&sortBy=publishedAt&apiKey=22fa0a73b7ce45e68300a153ed853db4"
+    "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=22fa0a73b7ce45e68300a153ed853db4"
   )
     .then((response) => response.json())
     .then((data) => {
@@ -39,6 +39,7 @@ fetchData();
 </template>
 <style>
 .news {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -53,9 +54,7 @@ fetchData();
 img {
   max-width: 600px;
   height: auto;
+  padding: 20px;
 }
-li {
-  background-color: palevioletred;
-  color: black;
-}
+
 </style>
