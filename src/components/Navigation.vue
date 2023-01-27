@@ -118,6 +118,14 @@ ul {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
+
+  overflow-x: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+ul::-webkit-scrollbar {
+  display: none;
 }
 
 li {
