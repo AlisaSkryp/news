@@ -1,14 +1,14 @@
 <script setup>
 import Header from "./components/Header.vue";
 import PostComponent from "./components/PostComponent.vue";
-import Navigation from "./components/Navigation.vue";
+import NavigationComponent from "./components/NavigationComponent.vue";
 </script>
 
 <template>
   <header class="header">
     <Header />
     <font-awesome-icon icon="phone" />
-    <Navigation />
+    <NavigationComponent />
   </header>
 
   <main>
@@ -20,7 +20,7 @@ import Navigation from "./components/Navigation.vue";
 main {
   display: grid;
   grid-template-rows: (2, 1fr);
-  max-width: 1280px;
+  max-width: 1012px;
   margin-top: 100px;
 }
 .header {
